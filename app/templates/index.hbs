@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Contact information</h1>
+<ul>
+  {{#each model as |contact|}}
+    <li>{{contact.name}}'s{{contact.age}} in {{contact.occupation}}{{contact.image}}</li>
+  {{/each}}
+</ul>
+{{#link-to 'about'}}About Us{{/link-to}}
+<br>
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+</div>
