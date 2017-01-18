@@ -9,11 +9,14 @@ export default Ember.Component.extend({
     imageHide: function() {
       this.set('isImageShowing', false);
     },
+    update(contact, params) {
+      this.sendAction('update', contact, params);
+    },
     delete(contact) {
       if (confirm('Are you sure you want to delete'))
   {
     this.sendAction('destroyContact', contact);
-    }
+      }
     }
   }
 });

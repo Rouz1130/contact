@@ -1,0 +1,40 @@
+{{#if updateContactForm}}
+  <h4>Edit {{contact.name}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        {{input value=name id="name" placeholder=contact.name}}
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label>
+        {{input value=age id="age" placeholder=contact.age}}
+      </div>
+
+      <div class="form-group">
+        <label for="occupation">Were do you work:</label>
+        {{input value=occupation id="occupation" placeholder=contact.occupation}}
+      </div>
+
+      <div class="form-group">
+        <label for="resides">Country of residence</label>
+        {{input value=resides id="resides" placeholder=contact.resides}}
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        {{input value=email id="email"placeholder=contact.email }}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image" placeholder=contact.image}}
+      </div>
+
+      <button {{action 'update' contact}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateContactForm'}}>Edit:</button>
+{{/if}}
