@@ -1,0 +1,8 @@
+<li><h4>
+  NAME:{{contact.name}} AGE: {{contact.age}}, RESIDENCE: {{contact.resides}}, OCCUPATON: {{contact.ococcupation}}, EMAIL :{{contact.email}}</h4>
+  {{#if isImageShowing}}
+  <p><img src={{contact.image}}> {{action 'imageHide'}}</p>
+  {{else}}
+  <button {{action 'imageShow'}}>Show Image</button>
+  {{/if}}
+</li>

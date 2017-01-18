@@ -2,16 +2,22 @@
     "name": "Marty Mcfly",
     "age": "28",
     "occupation": "Student",
+    "resides": "Usa",
+    "email":"marty@gmail.com",
     "image": "https://upload.wikimedia.org/wikipedia/en/d/d8/Michael_J._Fox_as_Marty_McFly_in_Back_to_the_Future,_1985.jpg"
   }, {
     "name": "Biff Tannen",
     "age": "48",
     "occupation": "Bully",
+    "resides": "Usa",
+    "email":"biff@gmail.com",
     "image": "http://vignette1.wikia.nocookie.net/bttf/images/7/7b/Griff-tannen-back-to-the-future-ii.jpg/revision/latest?cb=20111124103720"
   }, {
     "name": "Dr. Emmitt Brown",
     "age": "60",
     "occupation": "Scientist",
+    "resides": "Usa",
+    "email":"Emmitt@gmail.com",
     "image": "https://s-media-cache-ak0.pinimg.com/736x/b9/60/f8/b960f84ec0b6177ae5667b1fd3866631.jpg"
   }]
 }

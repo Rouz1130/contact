@@ -1,11 +1,13 @@
 <div class="container">
-  <h1>Contact information</h1>
+<h1>Contact information</h1>
 <ul>
   {{#each model as |contact|}}
-    <li>{{contact.name}}'s{{contact.age}} in {{contact.occupation}}{{contact.image}}</li>
+  {{contact-tile contact=contact}}
   {{/each}}
 </ul>
+<br>
 {{#link-to 'about'}}About Us{{/link-to}}
+<br>
 <br>
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
 </div>
