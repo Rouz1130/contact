@@ -1,17 +1,19 @@
 <div class="container">
-<h1>Contact information</h1>
-<hr>
-<br>
-<ul>
-  {{#each model as |contact|}}
-    {{contact-tile contact=contact update="update" destroyContact="destroyContact"}}
-  {{/each}}
-</ul>
-<br>
-{{new-contact saveContact2="saveContact3"}}
-<br>
-{{#link-to 'about'}}About Us{{/link-to}}
-<br>
-<br>
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+  <div class="container">
+    <div class="row centered mt mb">
+      <div class="col-lg-8 col-lg-offset-2">
+        <hr>
+        <ul>
+          {{#each model as |contact|}}
+          {{contact-tile contact=contact update="update" destroyContact="destroyContact"}}
+          {{/each}}
+        </ul>
+        <br>
+        {{new-contact saveContact2="saveContact3"}}
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
 </div>
