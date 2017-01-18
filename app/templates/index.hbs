@@ -2,7 +2,7 @@
 <h1>Contact information</h1>
 <ul>
   {{#each model as |contact|}}
-  {{contact-tile contact=contact}}
+  {{contact-tile contact=contact destroyContact="destroyContact"}}
   {{/each}}
 </ul>
 <br>

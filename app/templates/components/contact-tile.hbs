@@ -1,8 +1,9 @@
 <li><h4>
   <b>NAME:</b>{{contact.name}}, <b>AGE:</b> {{contact.age}},<b>RESIDENCE:</b> {{contact.resides}}, <b>OCCUPATON:</b> {{contact.occupation}}, <b>EMAIL</b> :{{contact.email}}</h4>
   {{#if isImageShowing}}
-  <p><img src={{contact.image}}> {{action 'imageHide'}}</p>
+  <p><img src={{contact.image}} {{action 'imageHide'}}></p>
   {{else}}
   <button {{action 'imageShow'}}>Show Image</button>
   {{/if}}
+  <button {{action 'delete' contact}}>Delete Contact</button>
 </li>
