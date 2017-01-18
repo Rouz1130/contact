@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   isImageShowing: false,
+  updateContactForm: false,
   actions: {
     imageShow: function() {
       this.set('isImageShowing', true);
