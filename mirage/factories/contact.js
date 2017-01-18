@@ -2,7 +2,7 @@ import { Factory } from 'ember-cli-mirage';
 
 export default Factory.extend({
   name(i) {
-    return `Contact ${i+1}`;
+    return `Contacts ${i+1}`;
   },
   name: "test name",
   age: "test@test.test"

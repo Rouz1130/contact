@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   model() {
     return ({
       contacts: $.getJSON('/api/contacts'),
-      contact2: $.getJSON('/api/contact/2')
+      contact2: $.getJSON('/api/contacts/2')
   });
 
   // actions: {
