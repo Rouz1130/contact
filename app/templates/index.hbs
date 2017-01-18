@@ -1,11 +1,13 @@
 <div class="container">
 <h1>Contact information</h1>
+<hr>
+<br>
 <ul>
   {{#each model as |contact|}}
     {{contact-tile contact=contact update="update" destroyContact="destroyContact"}}
   {{/each}}
 </ul>
-
+<br>
 {{new-contact saveContact2="saveContact3"}}
 <br>
 {{#link-to 'about'}}About Us{{/link-to}}
