@@ -1,5 +1,9 @@
 export default function() {
-
+  this.namespace = 'api';
+  
+  this.get('/contacts');
+  this.get('/contacts/:id');
+  }
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
@@ -23,4 +27,3 @@ export default function() {
 
     http://www.ember-cli-mirage.com/docs/v0.2.x/shorthands/
   */
-}

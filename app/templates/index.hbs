@@ -1,19 +1,18 @@
-<div class="container">
   <div class="container">
-    <div class="row centered mt mb">
-      <div class="col-lg-8 col-lg-offset-2">
-        <hr>
+    <h2>Mirage test</h2>
+  </div>
         <ul>
+          <!--length of mrage test list  -->
+          <li>{{model.contacts.data.length}}</li>
+          <!--second mirage list  -->
+          <li>{{model.contact2.data.attributes.name}}</li>
+        </ul>
+
+  <!--
           {{#each model as |contact|}}
           {{contact-tile contact=contact update="update" destroyContact="destroyContact"}}
           {{/each}}
         </ul>
         <br>
         {{new-contact saveContact2="saveContact3"}}
-        <br>
-        <br>
-        <br>
-      </div>
-    </div>
-  </div>
-</div>
+       -->
