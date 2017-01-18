@@ -2,9 +2,11 @@
 <h1>Contact information</h1>
 <ul>
   {{#each model as |contact|}}
-  {{contact-tile contact=contact destroyContact="destroyContact"}}
+    {{contact-tile contact=contact destroyContact="destroyContact"}}
   {{/each}}
 </ul>
+
+{{new-contact saveContact2="saveContact3"}}
 <br>
 {{#link-to 'about'}}About Us{{/link-to}}
 <br>
