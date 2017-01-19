@@ -1,8 +1,10 @@
 import Ember from 'ember';
 
+const {RSVP, $} = Ember;
+
 export default Ember.Route.extend({
   model() {
-    return ({
+    return RSVP.hash ({
       contacts: $.getJSON('/api/contacts'),
       contact2: $.getJSON('/api/contacts/2')
   });

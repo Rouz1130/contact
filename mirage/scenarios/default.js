@@ -1,6 +1,6 @@
 export default function(server) {
 
-    server.createList('contact',10);
+    server.createList('contact',5);
 }
   /*
     Seed your development database using your factories.
