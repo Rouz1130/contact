@@ -1,7 +1,9 @@
 export default function() {
   this.namespace = 'api';
 
-  this.get('/contacts');
+  this.get('/contacts', (schema, request) +> {
+    return schema.contacts.all();
+  });
   this.get('/contacts/:id');
   }
   // These comments are here to help you get started. Feel free to delete them.

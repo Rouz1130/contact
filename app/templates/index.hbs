@@ -5,8 +5,13 @@
           <!--length of mrage test list  -->
           <li>{{model.contacts.data.length}}</li>
           <!--second mirage list  -->
-          <li>{{model.contact2.data.attributes.name}}</li>
+
+          {{#each model as contacts}}
+          <li>{{model.contacts.data.attributes.name}}</li>
+          {{/each}}
         </ul>
+        <li>{{model.contact2.data.attributes.age}}</li>
+        <li>{{model.account2.data.attrubutes.name}}</li>
 
   <!--
           {{#each model as |contact|}}
